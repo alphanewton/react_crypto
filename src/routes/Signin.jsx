@@ -1,4 +1,3 @@
-import React from "react";
 import { AiFillLock, AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
