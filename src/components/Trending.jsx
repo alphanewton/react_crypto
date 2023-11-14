@@ -5,9 +5,11 @@ const url = "https://api.coingecko.com/api/v3/search/trending";
 
 function Trending() {
   const [trending, setTrending] = useState([]);
+
   useEffect(() => {
     axios.get(url).then((res) => setTrending(res.data.coins));
   }, []);
+
   return (
     <div className="rounded-div my-12 py-8 text-primary">
       <h1 className="text-2xl font-bold py-4">Trending Coins</h1>
